@@ -295,7 +295,7 @@ textarea {
 
 textarea:focus {
     border: 1px solid #09c3b0;
-    color: #afafaf;
+    color: #afafaf !important;
 }
 
 input:focus {
