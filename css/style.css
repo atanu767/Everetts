@@ -290,7 +290,7 @@ textarea {
 .form-box textarea{
     outline: none;
     padding: 16px 20px 10px 15px;
-    color:#afafaf;
+    color:#afafaf !important;
 }
 
 textarea:focus {
