@@ -287,13 +287,15 @@ textarea {
     height: 40px;
 }
 
-.form-box textarea {
+.form-box textarea{
     outline: none;
     padding: 16px 20px 10px 15px;
+    color:#afafaf;
 }
 
 textarea:focus {
     border: 1px solid #09c3b0;
+    color: #afafaf;
 }
 
 input:focus {
