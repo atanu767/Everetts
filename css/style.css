@@ -286,11 +286,14 @@ textarea {
     padding: 14px 14px 13px 15px;
     height: 40px;
 }
+input:-internal-autofill-selected{
+    background: transparent !important;
+}
 
 .form-box textarea{
     outline: none;
     padding: 16px 20px 10px 15px;
-    color:#afafaf !important;
+    color:#afafaf !important    ;
 }
 
 textarea:focus {
