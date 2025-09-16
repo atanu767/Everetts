@@ -286,7 +286,7 @@ textarea {
     padding: 14px 14px 13px 15px;
     height: 40px;
 }
-input:-internal-autofill-selected{
+input:focus{
     background: transparent !important;
 }
 
