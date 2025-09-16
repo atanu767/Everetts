@@ -585,6 +585,7 @@ p {
     .offcanvas-header {
         display: flex;
         justify-content: end;
+       
     }
 
     .navbar-nav {
@@ -605,6 +606,7 @@ p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0rem 1rem !important;
     }
 
 }
