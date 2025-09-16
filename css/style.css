@@ -286,9 +286,13 @@ textarea {
     padding: 14px 14px 13px 15px;
     height: 40px;
 }
-input:focus{
-    background: transparent !important;
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color:transparent !important;
+    color: fieldtext !important;
 }
+
 
 .form-box textarea{
     outline: none;
