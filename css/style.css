@@ -31,6 +31,7 @@ body {
 
 a {
     text-decoration: none;
+    display: inline-block;
 
 }
 
@@ -40,7 +41,7 @@ ul li {
 
 img {
     max-width: 100%;
-    height: auto;
+    height:100%;
     object-fit: cover;
 }
 
@@ -83,6 +84,9 @@ h3 {
 .header {
     padding: 20px 0;
 }
+.logo{
+    width: 208.49px;
+}
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show>.nav-link {
@@ -111,11 +115,11 @@ h3 {
     color: var(--secondary-color) !important;
 }
 
-.header-btn {
-    width: 135px;
-    height: 50px;
+.header-btn{
+    
+  
 
-    background: var(--primary-color);
+    
     border-radius: 7px;
     color: var(--third-color);
     margin-left: 30px;
@@ -126,6 +130,10 @@ h3 {
     overflow: hidden;
     border: none !important;
 
+}
+.btn-primary{
+    padding:18.5px 30.5px;
+     background: var(--primary-color) !important;
 }
 
 .header-btn::before {
@@ -190,8 +198,7 @@ h3 {
 }
 
 .banner-btn {
-    max-width: 168px;
-    height: 50px;
+   padding: 18.5px 36.5px;
 
     background: var(--secondary-color);
     border-radius: 7px;
@@ -208,11 +215,12 @@ h3 {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(60deg, rgb(245, 42, 42), rgb(60, 240, 60), rgb(20, 241, 230));
+    background:var(--primary-color);
     top: 0;
     left: -100%;
 
     transition: 0.4s ease-in-out;
+    z-index: -1;
 }
 
 .banner-btn:hover::before {
@@ -222,7 +230,7 @@ h3 {
 
 .banner-btn:hover {
     color: var(--third-color);
-    box-shadow: 0 5px 35px 0 rgba(247, 87, 38, 0.6);
+    box-shadow: 0 5px 15px 0 rgba(247, 87, 38, 0.6);
 }
 
 
@@ -232,7 +240,8 @@ h3 {
     padding: 34px 39px 40px 19px;
     background: #ffffff;
     border-radius: 20px;
-    min-height: 477px;
+    max-width: 468px;
+    
 }
 
 .form-box span {
@@ -247,15 +256,12 @@ h3 {
     font-size: 24px;
 }
 
-.name-box {
-
-    gap: 20px;
-
+.form-box .row .col-6 input{
+    max-width: 100%;
 }
 
-.name-box input {
-    width: 50%;
-}
+
+
 
 
 .form-box input,
@@ -299,12 +305,12 @@ input:-internal-autofill-selected {
 }
 
 textarea:focus {
-    border: 1px solid #09c3b0;
+    border: 1px solid var(--primary-color);
     color: #afafaf !important;
 }
 
 input:focus {
-    border: 1px solid #09c3b0 !important;
+    border: 1px solid var(--primary-color) !important;
 }
 
 /* ::placeholder:focus{
@@ -316,8 +322,8 @@ input:focus {
 }
 
 .form-btn {
-    max-width: 100%;
-    height: 50px;
+    
+   
 
     padding: 18.5px 0;
     background: var(--secondary-color);
@@ -376,8 +382,16 @@ input:focus {
     padding: 100px 0;
 }
 
-.hero figure {
+.about-img {
     margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 568px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-content>h2 {
@@ -393,6 +407,25 @@ input:focus {
     color: var(--text-color);
     max-width: 539px;
 }
+.hero-btn{
+    background: var(--primary-color);
+}
+.hero-btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:var(--secondary-color);
+    top: 0;
+    left: -100%;
+
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.hero-btn:hover{
+   left: 0;
+}
 
 /* ---hero section end--- */
 
@@ -405,7 +438,7 @@ input:focus {
 }
 
 
-.product-title .h2-title,
+.product-title h2,
 p {
     margin-bottom: 40px;
 }
@@ -420,17 +453,23 @@ p {
 }
 
 .product .card {
-    padding: 15px 15px 30px;
+    padding: 15px 15px 40px;
     background: var(--third-color);
     border-radius: 20px;
     border: none;
     transition: 0.5s ease-in-out;
 
 }
+.card-img{
+    max-width: 340px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
 
 .product .card:hover {
 
-    box-shadow: 0 4px 30px rgb(20, 241, 230, .7);
+    box-shadow:0 4px 10px 0 var(--primary-color);
     transform:scale(1.01);
 
 }
@@ -441,9 +480,9 @@ p {
 
 
 
+
 .card-btn {
-    max-width: 169px;
-    height: 50px;
+  padding: 18.5px 36px;
     border-radius: 7px;
 
 
@@ -454,6 +493,8 @@ p {
     overflow: hidden;
     z-index: 999;
     border: none !important;
+    
+    display: inline-block;
 }
 
 .card-btn::before {
@@ -496,7 +537,7 @@ p {
 
 .card-btn:hover {
     color: var(--third-color);
-    box-shadow: 0 4px 30px rgb(20, 241, 230, .5);
+    box-shadow:var(--secondary-color);
 }
 
 /* --- card section end */
@@ -530,11 +571,16 @@ p {
 
 }
 
-.footer-content>.footer-logo {
+.footer-content>.footer-logo .footer-img{
     max-width: 312px;
 
     margin-bottom: 60px;
 
+}
+.footer-content>.footer-logo .footer-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer-content span {
@@ -644,7 +690,7 @@ p {
 
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .logo {
         max-width: 150px;
     }
@@ -678,8 +724,14 @@ p {
         text-align: center;
     }
 
-    .banner .banner-btn {
-        width: 168px;
+    .card-btn,.banner-btn {
+       padding: 16px 30px !important;
+    }
+    .form-box{
+        max-width: 100%;
+    }
+    .form-btn{
+        padding: 16px 0;
     }
 
     .form-box span {
@@ -703,23 +755,27 @@ p {
         align-items: center;
         justify-content: center;
     }
-
-    .hero-btn {
-        width: 160px;
-        height: 50px;
+    .about-img{
+        max-width: 100%;
     }
+
+   
 
     .product {
         padding: 60px 0;
     }
+    .product-title h2,.product-title p{
+        margin-bottom:30px;
+    }
+
 
     .product .card {
         margin-bottom: 25px;
     }
 
-    .footer-content .footer-logo {
+    .footer-content .footer-logo .footer-img{
         max-width: 200px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .footer-content span {
@@ -743,10 +799,15 @@ p {
     .h2-title {
         font-size: 25px;
     }
+    .card-btn,.banner-btn {
+       padding: 14px 25px !important;
+    }
 
-    .name-box {
-        flex-direction: column;
-        gap: 0;
+    .form-box .row .col-6{
+        width: 100%;
+    }
+    .form-box .row .col-6 input{
+        width: 100%;
     }
 
     .name-box input {
@@ -758,6 +819,20 @@ p {
         padding-bottom: 25px;
         font-size: 17px;
     }
+
+    .card-img{
+    max-width:100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+     .product-title h2,.product-title p{
+        margin-bottom:20px;
+    }
+     .footer-content .footer-logo .footer-img{
+        max-width: 180px;
+        margin-bottom: 30px;
+    }
+    
 }
 
 @media(max-width:400px) {
