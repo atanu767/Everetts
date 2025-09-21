@@ -734,9 +734,10 @@ p {
         padding: 16px 0;
     }
 
-    .form-box span {
+    .form-title{
         margin: 0 auto;
         padding-bottom: 25px;
+        font-size: 18px;
 
     }
 
