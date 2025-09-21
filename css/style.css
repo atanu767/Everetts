@@ -244,7 +244,7 @@ h3 {
     
 }
 
-.form-box span {
+.form-title{
     max-width: 468px;
 
     color: var(--primary-color);
@@ -623,7 +623,7 @@ p {
         font-size: 70px;
     }
 
-    .form-box span {
+    .form-title{
         font-size: 20px;
         margin-bottom: 25px;
     }
